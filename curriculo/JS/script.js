@@ -6,13 +6,13 @@ const botao = document.getElementById("Tema");
          }
 
          //alternar tema
-         botao.addEventListener("click", () => {
+         botao.addEventListener("click",() => {
             document.body.classList.toggle("dark");
 
             if (document.body.classList.contains("dark")) {
-                localStorage.setItem("tema", "dark");
+                localStorage.setItem("Tema", "dark");
             } else {
-                localStorage.setItem("tema", "light");
+                localStorage.setItem("Tema", "light");
             }
          });
          
