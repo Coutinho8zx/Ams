@@ -18,15 +18,30 @@
     --cor-branco:#1e1e1e;
     --cor-borda:#444;
     --cor-sombra:#000;
+    --bg-image: url('../images/fundo2.jpg');
+    --overlay-opacity:0.2;
 }
 
 *{
     transition: all 0.5s ease;
 }
 
-body{
-   background:var(--cor-fundo);
-   color:var(--cor-texto);
+body.dark {
+     background: 
+     linear-gradient(
+        rgba(0, 0, 0, var(--overlay-opacity)),
+        rgba(0, 0, 0, var(--overlay-opacity))
+     ),
+   var(--bg-image) no-repeat center center fixed;
+
+   background-size: cover;
+   min-height: 100vh;
+   height: auto;
+}
+
+body.dark html{
+    background: transparent;
+    height: 100%;
 }
 
 header{
@@ -62,7 +77,7 @@ header{
     background:var(--cor-header);
     display: flex;                     /*ativa flexbox*/
     align-items: center;               /*centraliza vertical*/
-    justify-content: flex;             /*centraliza titulo*/
+    justify-content: center;             /*centraliza titulo*/
     position: relative;                /*base para posicionamento*/
 }
 
