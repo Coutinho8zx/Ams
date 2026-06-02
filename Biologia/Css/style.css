@@ -46,3 +46,40 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        text-align:center;
+    }
+
+    h1{
+        color:rgb(251, 253, 251);
+    }
+
+    table{
+        margin:auto;
+        width:70%;
+        border-collapse:collapse;
+        background:white;
+    }
+
+    th, td{
+        border:1px solid #ccc;
+        padding:10px;
+    }
+
+    th{
+        background:green;
+        color:white;
+    }
+
+    .campeao{
+        background:gold;
+        font-weight:bold;
+    }
+
+    button{
+        margin:5px;
+        padding:8px 12px;
+        cursor:pointer;
+    }
