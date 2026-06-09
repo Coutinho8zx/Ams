@@ -1,7 +1,7 @@
 participantes = [
-    {nome: "Maria", pontos: 150},
-    {nome: "João", pontos: 120},
-    {nome: "Ana", pontos: 95}
+    {nome: "Maria", pontos: 0},
+    {nome: "João", pontos: 0},
+    {nome: "Ana", pontos: 0}
 ];
 
 function atualizarTabela() {

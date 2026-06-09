@@ -53,7 +53,7 @@ body{
     }
 
     h1{
-        color:rgb(251, 253, 251);
+        color:rgb(2, 12, 2);
     }
 
     table{
@@ -69,7 +69,7 @@ body{
     }
 
     th{
-        background:green;
+        background:rgb(1, 78, 1);
         color:white;
     }
 
@@ -83,3 +83,12 @@ body{
         padding:8px 12px;
         cursor:pointer;
     }
+    footer{
+    width:98%;
+    height:30px;
+    background:  #82917e;
+    position:absolute;
+    bottom:0;
+    display:block;
+    clear:both;
+}
