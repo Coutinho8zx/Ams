@@ -1,0 +1,30 @@
+table{
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: auto;
+}
+
+td{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 8px;
+    font-family: Arial;
+}
+.numero{
+    font-size: 10px;
+}
+.simbolo{
+    font-size: 24px;
+    font-weight: bold;
+}
+.nome{
+    font-size: 10px;
+}
+.metal{background: #f4b400;}
+.nao-metal{background: #8bc34a;}
+.metaloide{background: #4fc3f7;}
+.gas{background: #ce93d8;}
+.iantanideos{background: #C8A27A;}
+.actinideos{background: #d3d3d397 ;}
