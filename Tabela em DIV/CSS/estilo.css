@@ -59,3 +59,27 @@ h1{
 .outroa{ background: #cfd4d9;}
 .lantanideos{ background: #b987f0;}
 .actinideos{ background: #f5a07c;}
+
+@media(max-width:1440px){
+    .tabela{
+        grid-template-columns: repeat(18, 55px);
+    }
+    .elemento{
+        width: 55px;
+        height: 55px;
+
+    }
+    .simbolo{
+        font-size:18px;
+        height: 55px;
+    }
+}
+@media(max-wigth:1000px){
+   body{
+    overflow-x:auto;
+   }
+
+.tabela{
+    width: max-content;
+}
+}
