@@ -1,0 +1,75 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.form{
+    background-color: antiquewhite;
+    
+}
+
+ body {
+    margin: 0;
+    background: linear-gradient(to left, #F3E4C9 75%, #8B5E3C 50%);
+    text-decoration: none; 
+ }  
+
+
+.campo{
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+    /* margin-left: 120px; */
+}
+
+#subtitulo{
+    text-align: center;
+}
+.nome{
+    margin-left: 550px;
+}
+.idade{
+    margin-left: 550px;
+}
+.telefone{
+    margin-left: 550px;
+}
+.raca{
+    margin-left:550px ;
+}
+.titulo{
+    margin-left: 550px;
+    color: #000000;
+}
+
+.campos{
+margin-left: 550px;
+}
+
+.precaucao{
+    margin-left: 550px;
+}
+.foto{
+    
+    transform: rotate(-10deg);
+    margin-top: -100px;
+    margin-left: -50px;
+
+}
+.foto2{
+    margin-top: -300px;
+    margin-left: 100px;
+    animation: ease-in 1s  2ms left ;
+    opacity: 1;
+}
+/* @keyframes{
+
+transform: rotate(20%);
+
+{
+    transform:rotate(25%)
+}
+{
+    transform:rotate(50%)
+} */
