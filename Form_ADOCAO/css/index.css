@@ -55,14 +55,22 @@ margin-left: 550px;
     transform: rotate(-10deg);
     margin-top: -100px;
     margin-left: -50px;
-
+    display: block;
+    width: 200px; 
+    height: 100px; 
 }
+
+
 .foto2{
     margin-top: -300px;
     margin-left: 100px;
     animation: ease-in 1s  2ms left ;
     opacity: 1;
+    display: block;
+    width: 200px; 
+    height: 100px;
 }
+
 /* @keyframes{
 
 transform: rotate(20%);
