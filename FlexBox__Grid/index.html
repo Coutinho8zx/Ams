@@ -75,15 +75,74 @@
                     </div>
                 </article>
                 <article class="prato">
-                    <div class="prato-foto cor-3">🍜</div>
+                    <div class="prato-foto cor-3">🍲</div>
                     <div class="prato-corpo">
                         <div class="prato_linha">
-                            
+                            <h3>Feijao tropeiro da casa</h3>
+                            <span class="preco">R$ 42</span>
                         </div>
+                        <P>Linguiça artesanal, couve crocante e ovo caipira.</P>
+                    </div>
+                </article>
+                <article class="prato">
+                    <div class="prato-foto cor-4">🥗</div>
+                    <div class="prato-corpo">
+                        <div class="prato-linha">
+                            <h3>Salada da horta</h3>
+                            <span class="preco">R$ 34</span>
+                        </div>
+                        <p>Folhas do dia, tomate, queijo minas e azeite de ervas.</p>
+                    </div>
+                </article>
+                <article class="prato">
+                    <div class="prato-foto cor-5">🍮</div>
+                    <div class="prato_corpo">
+                        <div class="prato-linha">
+                            <h3>Pudim de leite defumado</h3>
+                            <span class="preco">R$ 24</span>
+                        </div>
+                        <P>Calda de caramelo e flor de sal.</P>
+                    </div>
+                </article>
+                <article class="prato">
+                    <div class="prato-foto cor-6">🍋</div>
+                    <div class="prato-corpo">
+                        <div class="prato-linha">
+                            <h3>Limonada de capim-santo</h3>
+                            <span class="preco">R$ 14</span>
+                        </div>
+                        <p>Feita na hora, com pouco açucar.</p>
                     </div>
                 </article>
             </div>
         </section>
+        <section class="secao" id="visite">
+            <h2>Venha almoçar com a gente</h2>
+            <div class="Visite-grid">
+                <div class="horarios">
+                    <h3>Horarios</h3>
+                    <ul class="lista-horarios">
+                        <li><span>Terça a sexta</span><span>11h30 - 15h * 18h - 22h</span></li>
+                        <li><span>Sabado</span><span>11h30 - 23h</span></li>
+                        <li><span>Domingo</span><span>11h30 - 17h</span></li>
+                        <li><span>Segunda</span><span>Fechado</span></li>
+                    </ul>
+                    <p class="endereco">Rua das mangueiras, 120 - Centro<br>Telefone: (14) 3000-0000</p>
+                </div>
+                <form class="reserva" onsubmit="return false;">
+                    <h3>Reserve sua mesa</h3>
+                    <label>Nome <input type="text" placeholder="Seu nome"></label>
+                    <label>Telefone <input type="text" placeholder="(00) 00000-0000"></label>
+                    <label>Data <input type="date"></label>
+                    <label>Pessoas <input type="number" min="1" max="12" value="2"></label>
+                    <button class="botao" type="submit">Confirmar reserva</button>
+                </form>
+            </div>
+        </section>
     </main>
+    <footer class="rodape">
+        <p>© 2026 Brasa & Broto</p>
+        <p>Projeto didático de HTML + CSS Grid + Flexbox</p>
+    </footer>
 </body>
 </html>
