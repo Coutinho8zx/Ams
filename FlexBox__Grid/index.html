@@ -3,87 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brasa & Broto | Restaurante</title>
-    <link rel="stylesheet" href="CSS/index.css">
+    <title>Brasa &amp; Broto | Restaurante</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="httos://fonts.googleapis.com/css2?Family=Bricolage+Grotesque:wght@500;800&family=Figure:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/index.css">
 </head>
 <body>
     <header class="topo">
-        <a class="logo" href="#inicio">Brasa & Broto</a>
+        <a class="logo" href="#inicio">Brasa &amp; Broto</a>
         <nav>
             <ul class="menu">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardapio</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="#visite">Visite</a></li>
-                <li><a class="#botao" href="#visite">Reservar mesa</a></li>
+                <li><a class="botao" href="#visite">Reservar mesa</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="hero" id="inicio">
             <div class="hero-texto">
-                <h1>Comida de fogao a lenha, ingredientes da horta ao lado.</h1>
+                <h1>Comida de fogão a lenha, ingredientes da horta ao lado.</h1>
                 <p>Cozinha brasileira feita devagar, com legumes colhidos de manhã e carnes na brasa. Almoço e jantar, de terça a domingo.</p>
-            <div class="hero-acoes"><!-- FLEXBOX: botões lado a lado-->
-                <a class="botao" href="#cardapio">Ver cardapio</a>
-                <a class="botao botao-claro" href="#visite">Como chegar</a>
-            </div>
+                <div class="hero-acoes"><!-- FLEXBOX: botões lado a lado -->
+                    <a class="botao" href="#cardapio">Ver cardápio</a>
+                    <a class="botao botao-claro" href="#visite">Como chegar</a>
+                </div>
             </div>
             <div class="mosaico" aria-hidden="true">
-                <div class="title t1">🥩</div>
-                <div class="title t2">🌽</div>
+                <div class="tile t1">🥩</div>
+                <div class="tile t2">🌽</div>
+                <div class="tile t3">🍅</div>
+                <div class="tile t4">🔥</div>
             </div>
         </section>
+
         <section class="secao" id="sobre">
             <h2>Do jeito que a gente come em casa</h2>
             <div class="sobre-grid">
                 <article class="destaque">
-                    <h3>Horta propria</h3>
-                    <p>Folhas, ervas e legumes vem de um canteiro a 200 metro da cozinha.</p>
+                    <h3>Horta própria</h3>
+                    <p>Folhas, ervas e legumes vêm de um canteiro a 200 metros da cozinha.</p>
                 </article>
                 <article class="destaque">
                     <h3>Produtor local</h3>
-                    <p>Queijos, café e farinhas  de sete pequenos produtores da região</p>
+                    <p>Queijos, café e farinhas de sete pequenos produtores da região.</p>
                 </article>
             </div>
         </section>
-        <section class="secao secao-escura" id="cardapio">
-            <h2>Cardapio</h2>
-            <div class="cardapio-grid">
 
+        <section class="secao secao-escura" id="cardapio">
+            <h2>Cardápio</h2>
+            <div class="cardapio-grid">
                 <article class="prato">
                     <div class="prato-foto cor-1">🥩</div>
                     <div class="prato-corpo">
-                      <div class="prato-linha"><!-- FLEXBOX: nome ... preço-->
-                         <h3>Fraldinha na brasa</h3>
-                         <span>R$ 68</span>
-                      </div>
-                      <p>Com mandioca cozida, vinagrete e farofa de ovos</p>
+                        <div class="prato-linha"><!-- FLEXBOX: nome ... preço -->
+                            <h3>Fraldinha na brasa</h3>
+                            <span class="preco">R$ 68</span>
+                        </div>
+                        <p>Com mandioca cozida, vinagrete e farofa de ovos.</p>
                     </div>
                 </article>
+
                 <article class="prato">
                     <div class="prato-foto cor-2">🐟</div>
                     <div class="prato-corpo">
-                     <div class="prato-linha">
-                       <h3>tilapia assada na folha</h3>
-                       <span class="preço">R$ 59</span>
-                    </div> 
-                     <p>Folha bananeira, arroz de coco e salada de palmito.</p> 
+                        <div class="prato-linha">
+                            <h3>Tilápia assada na folha</h3>
+                            <span class="preco">R$ 59</span>
+                        </div>
+                        <p>Folha de bananeira, arroz de coco e salada de palmito.</p>
                     </div>
                 </article>
+
                 <article class="prato">
                     <div class="prato-foto cor-3">🍲</div>
                     <div class="prato-corpo">
-                        <div class="prato_linha">
-                            <h3>Feijao tropeiro da casa</h3>
+                        <div class="prato-linha">
+                            <h3>Feijão tropeiro da casa</h3>
                             <span class="preco">R$ 42</span>
                         </div>
-                        <P>Linguiça artesanal, couve crocante e ovo caipira.</P>
+                        <p>Linguiça artesanal, couve crocante e ovo caipira.</p>
                     </div>
                 </article>
+
                 <article class="prato">
                     <div class="prato-foto cor-4">🥗</div>
                     <div class="prato-corpo">
@@ -94,16 +100,18 @@
                         <p>Folhas do dia, tomate, queijo minas e azeite de ervas.</p>
                     </div>
                 </article>
+
                 <article class="prato">
                     <div class="prato-foto cor-5">🍮</div>
-                    <div class="prato_corpo">
+                    <div class="prato-corpo">
                         <div class="prato-linha">
                             <h3>Pudim de leite defumado</h3>
                             <span class="preco">R$ 24</span>
                         </div>
-                        <P>Calda de caramelo e flor de sal.</P>
+                        <p>Calda de caramelo e flor de sal.</p>
                     </div>
                 </article>
+
                 <article class="prato">
                     <div class="prato-foto cor-6">🍋</div>
                     <div class="prato-corpo">
@@ -111,24 +119,26 @@
                             <h3>Limonada de capim-santo</h3>
                             <span class="preco">R$ 14</span>
                         </div>
-                        <p>Feita na hora, com pouco açucar.</p>
+                        <p>Feita na hora, com pouco açúcar.</p>
                     </div>
                 </article>
             </div>
         </section>
+
         <section class="secao" id="visite">
             <h2>Venha almoçar com a gente</h2>
-            <div class="Visite-grid">
+            <div class="visite-grid">
                 <div class="horarios">
-                    <h3>Horarios</h3>
+                    <h3>Horários</h3>
                     <ul class="lista-horarios">
-                        <li><span>Terça a sexta</span><span>11h30 - 15h * 18h - 22h</span></li>
-                        <li><span>Sabado</span><span>11h30 - 23h</span></li>
+                        <li><span>Terça a sexta</span><span>11h30 - 15h • 18h - 22h</span></li>
+                        <li><span>Sábado</span><span>11h30 - 23h</span></li>
                         <li><span>Domingo</span><span>11h30 - 17h</span></li>
                         <li><span>Segunda</span><span>Fechado</span></li>
                     </ul>
-                    <p class="endereco">Rua das mangueiras, 120 - Centro<br>Telefone: (14) 3000-0000</p>
+                    <p class="endereco">Rua das Mangueiras, 120 - Centro<br>Telefone: (14) 3000-0000</p>
                 </div>
+
                 <form class="reserva" onsubmit="return false;">
                     <h3>Reserve sua mesa</h3>
                     <label>Nome <input type="text" placeholder="Seu nome"></label>
@@ -140,8 +150,9 @@
             </div>
         </section>
     </main>
+
     <footer class="rodape">
-        <p>© 2026 Brasa & Broto</p>
+        <p>© 2026 Brasa &amp; Broto</p>
         <p>Projeto didático de HTML + CSS Grid + Flexbox</p>
     </footer>
 </body>

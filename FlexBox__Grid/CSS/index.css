@@ -1,33 +1,47 @@
-:root{
+:root {
     --floresta: #17392b;
     --salvia: #e4ecdd;
     --ocre: #e3a72f;
-    --pimenta:#c8432b;
-    --tinta:#1b2a22;
-    --branco:#fbfcf8;
+    --pimenta: #c8432b;
+    --tinta: #1b2a22;
+    --branco: #fbfcf8;
 }
-/*--------- 2. Reset e base -----------*/
-*{box-sizing: border-box; margin: 0; padding: 0;}
 
-body{
+/* --------- 2. Reset e base ----------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: "Figtree", system-ui, sans-serif;
     color: var(--tinta);
     background: var(--branco);
     line-height: 1.6;
 }
 
-h1,h2,h3{
-    font-family: "Bricolage Grotesque", georgia , serif;
+h1, h2, h3 {
+    font-family: "Bricolage Grotesque", Georgia, serif;
     line-height: 1.1;
 }
 
-a{color: inherit; text-decoration: none;}
-ul{list-style: none;}
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
-:focus-visible {outline: 3px solid var(--ocre); outline-offset: 3px;}
+ul {
+    list-style: none;
+}
 
-/* ---------- 3. Botões ----------*/
-.botao{
+:focus-visible {
+    outline: 3px solid var(--ocre);
+    outline-offset: 3px;
+}
+
+/* ---------- 3. Botões ---------- */
+.botao {
     display: inline-block;
     background: var(--pimenta);
     color: var(--branco);
@@ -37,11 +51,24 @@ ul{list-style: none;}
     border: 0;
     cursor: pointer;
 }
-.botao:hover {background: #a73520;}
-.botao-claro {background: transparent; color: var(--floresta); box-shadow: inset 0 0 0 2px var(--floresta);}
-.botao-claro:hover {background: var(--floresta); color: var(--branco);}
 
-.topo{
+.botao:hover {
+    background: #a73520;
+}
+
+.botao-claro {
+    background: transparent;
+    color: var(--floresta);
+    box-shadow: inset 0 0 0 2px var(--floresta);
+}
+
+.botao-claro:hover {
+    background: var(--floresta);
+    color: var(--branco);
+}
+
+/* ---------- 4. Cabeçalho ---------- */
+.topo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,17 +81,25 @@ ul{list-style: none;}
     top: 0;
     z-index: 10;
 }
-.logo {font-family: "bricolage grotesuqe",serif;font-weight: 800 ; font-size: 1.5rem;}
 
-.menu{
+.logo {
+    font-family: "Bricolage Grotesque", Georgia, serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.menu {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-.menu a:not(.botao):hover {color: var(--ocre);}
 
-/*---------- 5.hero - grid --------------*/
-.hero{
+.menu a:not(.botao):hover {
+    color: var(--ocre);
+}
+
+/* ---------- 5. Hero - Grid ---------- */
+.hero {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
     gap: 4vw;
@@ -73,44 +108,89 @@ ul{list-style: none;}
     min-height: 80vh;
     background: var(--salvia);
 }
-.hero-texto h1 {font-size: clamp(2.2rem , 5vw , 4 rem); font-weight: 800; color: var(--floresta);}
-.hero_texto p {margin: 1.2rem 0 1.8rem; max-width: 45ch; font-size: 1.1rem;}
 
-.hero-acoes {display: flex; flex-wrap: wrap; gap: 1 rem;}
+.hero-texto h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 800;
+    color: var(--floresta);
+}
 
-.mosaico{
+.hero-texto p {
+    margin: 1.2rem 0 1.8rem;
+    max-width: 45ch;
+    font-size: 1.1rem;
+}
+
+.hero-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.mosaico {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.3fr 1fr;
-    grid-template-areas: 
-     "a" "b"
-     "a" "c";
-     gap: 1rem;
-     height: min(60vh, 460px);
+    grid-template-areas:
+        "a b"
+        "a c";
+    gap: 1rem;
+    height: min(60vh, 460px);
 }
-.tile{
+
+.tile {
     display: grid;
     place-items: center;
     font-size: clamp(3rem, 8vw, 6rem);
     border-radius: 1.5rem;
 }
-.t1 {grid-area: a; background: var(--pimenta);}
-.t2 {grid-area: b; background: var(--ocre);}
-.t3 {grid-area: c; background: var(--floresta);}
-.t4 {display: none;}
 
-.secao {padding: 8vh 5vw;}
-.secao h2 {font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: var(--floresta); margin-bottom: 2rem; max-width: 22ch;}
+.t1 {
+    grid-area: a;
+    background: var(--pimenta);
+}
 
-.secao-escura {background: var(--floresta);}
-.secao-escura h2{color: var(--ocre);}
+.t2 {
+    grid-area: b;
+    background: var(--ocre);
+}
 
-.sobre-grid{
+.t3 {
+    grid-area: c;
+    background: var(--floresta);
+}
+
+.t4 {
+    display: none;
+}
+
+/* ---------- 6. Seções ---------- */
+.secao {
+    padding: 8vh 5vw;
+}
+
+.secao h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    color: var(--floresta);
+    margin-bottom: 2rem;
+    max-width: 22ch;
+}
+
+.secao-escura {
+    background: var(--floresta);
+}
+
+.secao-escura h2 {
+    color: var(--ocre);
+}
+
+.sobre-grid {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
-.destaque{
+
+.destaque {
     display: flex;
     flex-direction: column;
     gap: .6rem;
@@ -118,4 +198,156 @@ ul{list-style: none;}
     border-left: 6px solid var(--ocre);
     background: var(--salvia);
 }
-.destaque h3{ font-size: 1.4rem;color: var(--floresta);}
+
+.destaque h3 {
+    font-size: 1.4rem;
+    color: var(--floresta);
+}
+
+/* ---------- 7. Cardápio ---------- */
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.prato {
+    display: flex;
+    flex-direction: column;
+    background: var(--branco);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.prato-foto {
+    display: grid;
+    place-items: center;
+    height: 150px;
+    font-size: 3rem;
+}
+
+.cor-1 { background: #f2c9bb; }
+.cor-2 { background: #cfe3d3; }
+.cor-3 { background: #f3dfa6; }
+.cor-4 { background: #d7e8b6; }
+.cor-5 { background: #f5d7a1; }
+.cor-6 { background: #f7efa0; }
+
+.prato-corpo {
+    flex: 1;
+    padding: 1rem 1.2rem 1.3rem;
+}
+
+.prato-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: .4rem;
+}
+
+.prato-linha h3 {
+    font-size: 1.15rem;
+}
+
+.preco {
+    font-weight: 600;
+    color: var(--pimenta);
+    white-space: nowrap;
+}
+
+/* ---------- 8. Visite e Reserva ---------- */
+.visite-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.horarios h3,
+.reserva h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--floresta);
+}
+
+.lista-horarios li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .7rem 0;
+    border-bottom: 1px dashed #9db3a3;
+}
+
+.lista-horarios span:first-child {
+    font-weight: 600;
+}
+
+.endereco {
+    margin-top: 1.5rem;
+}
+
+.reserva {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.8rem;
+    background: var(--salvia);
+    border-radius: 1rem;
+}
+
+.reserva h3,
+.reserva .botao {
+    grid-column: 1 / -1;
+}
+
+.reserva label {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-weight: 600;
+}
+
+.reserva input {
+    padding: .65rem;
+    border: 2px solid #b9cbbd;
+    border-radius: .5rem;
+    font: inherit;
+    background: var(--branco);
+}
+
+/* ---------- 9. Rodapé ---------- */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 1.5rem 5vw;
+    background-color: var(--tinta);
+    color: var(--salvia);
+    font-size: .9rem;
+}
+
+/* ---------- 10. Responsividade ---------- */
+@media (max-width: 900px) {
+    .hero,
+    .visite-grid,
+    .sobre-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .menu {
+        gap: .9rem;
+        font-size: .95rem;
+    }
+
+    .reserva {
+        grid-template-columns: 1fr;
+    }
+}
